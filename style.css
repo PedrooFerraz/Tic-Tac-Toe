@@ -1,0 +1,78 @@
+/* Reset de estilos */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+h1{
+    margin: 30px 0px;
+}
+#restart {
+    background-color: grey;
+    width: 130px;
+    height: 70px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bolder;
+}
+#restart:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#results {
+    color: green;
+    margin-top: 20px;
+}
+
+.sqr {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.x{
+    position: relative;
+}
+
+.x:after{
+    position: absolute;
+    content: "\2715";
+    font-size: 50px;
+    line-height: 100px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+.o{
+    position: relative;
+}
+
+.o:after{
+    position: absolute;
+    content: "\25ef";
+    font-size: 50px;
+    line-height: 100px;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
